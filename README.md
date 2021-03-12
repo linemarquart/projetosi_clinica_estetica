@@ -1,8 +1,8 @@
 # PROJETO SI - CLÍNICA ESTÉTICA
 
 
-## Integrantes da Equipe:
-----------------
+## **Integrantes da Equipe:**
+
 
 - Aline Oliveira dos Santos
 - Gustavo Lopes de Paula
@@ -15,8 +15,8 @@
 - Victoria Ferreira Ribeiro
 
 
-## :dart: Objetivo: 
-----------------
+## :dart: **Objetivo:**
+
 
 Esse projeto está relacionado a máteria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal.
 
