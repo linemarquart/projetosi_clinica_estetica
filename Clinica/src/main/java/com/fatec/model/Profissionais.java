@@ -12,6 +12,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="profissionais")
 public class Profissionais implements Serializable{
+	private static final long serialVersionUID = 3928690242781860136L;
+
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_profissional;

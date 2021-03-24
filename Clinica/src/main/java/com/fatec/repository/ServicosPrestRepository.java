@@ -2,8 +2,8 @@ package com.fatec.repository;
 
 import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
 
-import com.fatec.model.ServicosPrestados;
+import com.fatec.model.Atendimento;
 
-public interface ServicosPrestRepository extends JpaRepositoryImplementation<ServicosPrestados, Long> {
+public interface ServicosPrestRepository extends JpaRepositoryImplementation<Atendimento, Long> {
 
 }

@@ -1,13 +1,13 @@
 package com.fatec.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fatec.dto.ClienteDTO;
+import com.fatec.model.Atendimento;
 import com.fatec.model.Cliente;
-import com.fatec.model.Ficha;
 import com.fatec.repository.ClienteRepository;
 
 
@@ -24,15 +24,25 @@ public class ClienteService  {
 
 	}
 	
-	public Cliente InsertCliente (Ficha vficha,Cliente cliente){
-		cliente.setFicha(vficha);
-		repository.save(cliente);		
+	public Cliente InsertCliente (Atendimento atendimento,Cliente cliente){
+		cliente.setAtendimento(atendimento);
+		repository.save(cliente);
 		return cliente;
 	}
-	
-	public ClienteDTO buscarClientePorId(Long id) {
-		Cliente clienteRef= SearchById(id);
-    return new ClienteDTO(clienteRef);
+
+	public void Deletar(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Cliente Alterar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Cliente> buscarClienteToList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

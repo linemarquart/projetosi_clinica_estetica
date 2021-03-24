@@ -15,8 +15,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="servicos_oferecidos")
 public class ServicosOferecidos implements Serializable{
-	private static final long serialVersionUID = -1233595710989292078L;
-	@Id
+	private static final long serialVersionUID = 8344992230990166895L;
+	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_servicos_oferecidos;
 	
