@@ -23,7 +23,7 @@ A fim de demonstrar a aplicação de técnicas à um banco de dados anonimizado 
 Com a finalidade de proteger os direitos e dados das pessoas, a Lei Geral de proteção de Dados é a legislação que regula a coleta, armazenamento, tratamento e compartilhamento de dados pessoais, impondo um padrão de proteção e penalidades para o descumprimento da norma. 
 
 
-**Desenvolvimento:**
+## **Desenvolvimento:**
 
 Será desenvolvido uma aplicação simples CRUD com acesso ao Bancos de dados voltado à solucionar problemas de anonimização dos dados sensíveis de clientes de uma clínica de estética.
 Aplicando o artigo 9º da lei LGPD , iremos trabalhar com:
@@ -32,7 +32,7 @@ Aplicando o artigo 9º da lei LGPD , iremos trabalhar com:
 Sabemos que a total anonimização dos dados não traz nenhum benefício para a empresa em si, mas enquanto os dados sensíveis de terceiros estiverem criptografados, este dado é considerado seguro.
 
 
-**Sprints:**
+## **Sprints:**
 
 SPRINT1:
 - Estudo sobre a LGPD.
@@ -40,7 +40,7 @@ SPRINT1:
 - Organização do github. 
 
 
-**Tecnologias utilizadas:**
+## **Tecnologias utilizadas:**
 - Dbeaver
 - Postgres
 - BrModelo
