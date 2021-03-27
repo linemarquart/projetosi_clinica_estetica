@@ -18,8 +18,8 @@
 ## :dart: **Objetivo:**
 
 
-Esse projeto está relacionado a matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal.
-A fim de demonstrar a aplicação de técnicas à um banco de dados anonimizado usamos como aplicação prática uma Clínica Estética. Com o intuito de criar uma modelagem de banco ideal para a empresa se adequar às regras da Lei Geral de Proteção de Dados (LGPD), é possível realizar a anonimização dos dados sensíveis dos clientes mantendo os dados importantes para a empresa, como informações de valores e a quantidade feita de cada procedimento. Será realizado por meio de uma API que simulará este funcionamento.
+Esse projeto está relacionado a matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal.  
+A fim de demonstrar a aplicação de técnicas à um banco de dados anonimizado usamos como aplicação prática uma Clínica Estética. Com o intuito de criar uma modelagem de banco ideal para a empresa se adequar às regras da Lei Geral de Proteção de Dados (LGPD), é possível realizar a anonimização dos dados sensíveis dos clientes mantendo os dados importantes para a empresa, como informações de valores e a quantidade feita de cada procedimento. Será realizado por meio de uma API que simulará este funcionamento.  
 Com a finalidade de proteger os direitos e dados das pessoas, a Lei Geral de proteção de Dados é a legislação que regula a coleta, armazenamento, tratamento e compartilhamento de dados pessoais, impondo um padrão de proteção e penalidades para o descumprimento da norma. 
 
 
