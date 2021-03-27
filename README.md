@@ -33,10 +33,10 @@ Sabemos que a total anonimização dos dados não traz nenhum benefício para a 
 
 Exemplo:
 
-|  ID  |  Nome           |   Telefone       |  Agendamento  |  Valor  |
-| ---- | --------------- | ---------------- | ------------- | ------- |
-|  1   |  Maria Clara    |   (12) 981375021 |    02/04/21   | 200,00  |  
-|  2   |  CRIPITOGRAFADO |   CRIPITOGRAFADO |  05/04/21     | 170,00  |  
+|  ID  |  Nome            |   Telefone           |  Agendamento  |  Valor  |
+| ---- | ---------------- | -------------------- | ------------- | ------- |
+|  1   |  Maria Clara     |   (12) 981375021     |    02/04/21   | 200,00  |  
+|  2   |**CRIPITOGRAFADO**|   **CRIPITOGRAFADO** |  05/04/21     | 170,00  |  
 
 
 ## **Sprints:**
