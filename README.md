@@ -10,7 +10,6 @@
 - Larissa Janine Dias
 - Marcos Paulo Simoes Donizete
 - Matheus Ribeiro dos Santos
-- Rafael Aparecido Rodrigues
 - Toni William do Prado
 - Victoria Ferreira Ribeiro
 
