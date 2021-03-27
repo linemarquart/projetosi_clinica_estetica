@@ -27,25 +27,25 @@ Com a finalidade de proteger os direitos e dados das pessoas, a Lei Geral de pro
 
 Será desenvolvido uma aplicação simples CRUD com acesso ao Bancos de dados voltado à solucionar problemas de anonimização dos dados sensíveis de clientes de uma clínica de estética.
 Aplicando o artigo 9º da lei LGPD , iremos trabalhar com:
-•	Ofuscar dados pessoais, para que dados de vendas sejam fornecidos de forma estatística, assim não tornando o portador do dado identificável.
-•	Criar regra de negócio, para que caso haja uma solicitação de dados pessoais, o titular do dado tenha que ser consultado para autorização.
+- Ofuscar dados pessoais, para que dados de vendas sejam fornecidos de forma estatística, assim não tornando o portador do dado identificável.
+- Criar regra de negócio, para que caso haja uma solicitação de dados pessoais, o titular do dado tenha que ser consultado para autorização.
 Sabemos que a total anonimização dos dados não traz nenhum benefício para a empresa em si, mas enquanto os dados sensíveis de terceiros estiverem criptografados, este dado é considerado seguro.
 
 
 **Sprints:**
 
 SPRINT1:
-•	Estudo sobre a LGPD.
-•	Início da modelagem do banco de dados.
-•	Organização do github. 
+- Estudo sobre a LGPD.
+- Início da modelagem do banco de dados.
+- Organização do github. 
 
 
 **Tecnologias utilizadas:**
-•	Dbeaver
-•	Postgres
-•	BrModelo
-•	Vertabelo
-•	Eclipse/SpringTools
+- Dbeaver
+- Postgres
+- BrModelo
+- Vertabelo
+- Eclipse/SpringTools
 
 
 
