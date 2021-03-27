@@ -31,6 +31,13 @@ Aplicando o artigo 9º da lei LGPD , iremos trabalhar com:
 - Criar regra de negócio, para que caso haja uma solicitação de dados pessoais, o titular do dado tenha que ser consultado para autorização.
 Sabemos que a total anonimização dos dados não traz nenhum benefício para a empresa em si, mas enquanto os dados sensíveis de terceiros estiverem criptografados, este dado é considerado seguro.
 
+Exemplo:
+
+|  ID  |  Nome           |   Telefone       |  Agendamento  |  Valor  |
+| ---- | --------------- | ---------------- | ------------- | ------- |
+|  1   |  Maria Clara    |   (12) 981375021 |    02/04/21   | 200,00  |  
+|  2   |  CRIPITOGRAFADO |   CRIPITOGRAFADO |  05/04/21     | 170,00  |  
+
 
 ## **Sprints:**
 
