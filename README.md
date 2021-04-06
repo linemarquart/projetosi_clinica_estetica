@@ -48,6 +48,7 @@ Exemplo:
 
 
 Portanto mesmo tendo parte dos dados criptografados, é possível gerar relatórios dos dados não pessoais, podendo tratá-los e torná-los como parâmetros para o crescimento da empresa.
+Além de garantir os processos dentro da lei, evitando multas dolorosas, a empresa não é prejudicada perdendo dados úteis.
 
 
 ## **Sprints:**
