@@ -74,7 +74,8 @@ SPRINT5:
 - Postgres
 - BrModelo
 - Vertabelo
-- Eclipse/SpringTools
+- Eclipse/SpringTools  
+
 
 
 Esse projeto está relacionado à matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal. 
