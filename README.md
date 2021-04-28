@@ -34,7 +34,7 @@ Com o intuito de criar uma modelagem de banco ideal para a empresa se adequar à
 Será desenvolvido uma aplicação CRUD com acesso ao Bancos de dados voltado à solucionar problemas de anonimização dos dados sensíveis de clientes da clínica de estética.  
 Solicitando a aceitação do termos de uso, onde será informado a utilização dos dados pessoais da pessoa pela empresa, iremos diferenciar quem aceitar ou não aceitar, criptografando ou não seus dados em nosso banco de acordo com sua escolha.  
 
-Aplicando o artigo 9º da lei LGPD , iremos trabalhar com:
+Aplicando o artigo 9º da lei [LGPD](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) , iremos trabalhar com:
 - Ofuscar dados pessoais, para que dados de vendas sejam fornecidos de forma estatística, assim não tornando o portador do dado identificável.
 - Criar regra de negócio, para que caso haja uma solicitação de dados pessoais, o titular do dado tenha que ser consultado para autorização.
 Sabemos que a total anonimização dos dados não traz nenhum benefício para a empresa em si, mas enquanto os dados sensíveis de terceiros estiverem criptografados, este dado é considerado seguro.
