@@ -4,14 +4,14 @@
 ## :large_blue_circle: **Integrantes da Equipe:**
 
 
-- Aline Oliveira dos Santos
-- Gustavo Lopes de Paula
-- Igor Sene Idalgo
-- Larissa Janine Dias
-- Marcos Paulo Simoes Donizete
-- Matheus Ribeiro dos Santos
-- Toni William do Prado
-- Victoria Ferreira Ribeiro
+- Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart)
+- Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes)
+- Igor Sene Idalgo [@GitHub](https://github.com/IgorS12)
+- Larissa Janine Dias [@GitHub](https://github.com/larijanine)
+- Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete)
+- Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss)
+- Toni William do Prado [@GitHub](https://github.com/toniprado)
+- Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar)
 
 
 ## :computer: **LGPD:**
