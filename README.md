@@ -14,7 +14,7 @@
 - Victoria Ferreira Ribeiro
 
 
-## **LGPD:**
+## :notebook: **LGPD:**
 
 A Lei Geral de Proteção de Dados tem como objetivo oferecer mais segurança sobre o uso de dados pessoais, garantindo maior controle e privacidade dos dados de pessoas físicas ou jurídicas. Ela é a legislação que regula a coleta, armazenamento, tratamento e compartilhamento de dados pessoais, impondo um padrão de proteção e penalidades para o descumprimento da norma.   
 Um bom exemplo são os termos de uso, aqueles textos enormes e que todo mundo aceita sem ler. Com ela em vigor, eles terão de ser muito mais curtos e claros, com a necessidade de especificar para que servem os dados solicitados.  
