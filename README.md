@@ -53,20 +53,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 
 ## **Sprints:**
 
-SPRINT1:
-- Estudo sobre a LGPD.
-- Início da modelagem do banco de dados.
-- Organização do github. 
-
-SPRINT2:
-
-SPRINT3:
-
-SPRINT4:
-
-SPRINT5:
-
-
+![sprint imagem](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/sprint%20imagem.png)
 
 
 ## **Tecnologias utilizadas:**
