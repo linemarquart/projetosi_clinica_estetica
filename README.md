@@ -67,3 +67,4 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 
 Esse projeto está relacionado à matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal. 
 
+![logo fatec](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/logo%20fatec.png)
