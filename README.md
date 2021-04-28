@@ -56,7 +56,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 ![sprint imagem](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/sprint%20imagem.png)
 
 
-## **Tecnologias utilizadas:**
+## :red_circle: **Tecnologias utilizadas:**
 - Dbeaver
 - Postgres
 - BrModelo
