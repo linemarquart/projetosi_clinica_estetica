@@ -20,6 +20,8 @@ import com.fatec.model.Atendimento;
 import com.fatec.model.Cliente;
 import com.fatec.services.ClienteService;
 
+import javassist.tools.rmi.ObjectNotFoundException;
+
 @CrossOrigin()
 @RestController
 @RequestMapping("/cliente")
@@ -47,7 +49,7 @@ public class ClienteControler {
     }
 	
 	@GetMapping("/buscarClientePorId/{id}")
-    public ResponseEntity<Cliente> buscarClientePorId(@PathVariable("id") Long id){
+    public ResponseEntity<Cliente> buscarClientePorId(@PathVariable("id") Long id) throws ObjectNotFoundException{
         Cliente cliente= service.SearchById(id);
         return ResponseEntity.ok().body(cliente);
     }

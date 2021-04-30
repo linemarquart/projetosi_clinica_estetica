@@ -10,6 +10,8 @@ import com.fatec.model.Atendimento;
 import com.fatec.model.Cliente;
 import com.fatec.repository.ClienteRepository;
 
+import javassist.tools.rmi.ObjectNotFoundException;
+
 
 
 @Service
@@ -18,10 +20,9 @@ public class ClienteService  {
 	private ClienteRepository repository;
 	//private FichaService fichaService;
 	
-	public Cliente SearchById (Long id){
+	public Cliente SearchById (Long id) throws ObjectNotFoundException{
 		Optional<Cliente> cliente = repository.findById(id);
 		return cliente.orElseThrow(() -> new ObjectNotFoundException("Cliente não encontrado!"));
-
 	}
 	
 	public Cliente InsertCliente (Atendimento atendimento,Cliente cliente){
