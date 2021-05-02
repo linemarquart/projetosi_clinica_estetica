@@ -1,6 +1,7 @@
 package com.fatec.model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +13,12 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@Getter @Setter @AllArgsConstructor
 @Table(name="servicos_oferecidos")
 public class ServicosOferecidos implements Serializable{
 	private static final long serialVersionUID = 8344992230990166895L;
