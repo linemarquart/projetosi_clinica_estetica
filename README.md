@@ -70,8 +70,8 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 
 ## 💻 Prototipação
 A prototipação é essencial para a visualização do projeto antes de começar o desenvolvimento.
-Para realizar a criação do protótipo, foi utilizado a plataforma [Figma](https://www.figma.com/) 
-Figma é uma ferramenta online utilizada para a criação do design de interfaces.
+Para realizar a criação do protótipo, foi utilizado a plataforma [Figma](https://www.figma.com/).
+Ela é uma ferramenta online utilizada para a criação do design de interfaces.
 
 Para visualizar a prototipação dessa aplicação e navegar entre as telas acesse o [link](https://www.figma.com/proto/tb0Enfa1oo68woFIiP5zD1/Prot%C3%B3tipo-de-Tela?node-id=25%3A7&scaling=min-zoom&page-id=0%3A1).
 
