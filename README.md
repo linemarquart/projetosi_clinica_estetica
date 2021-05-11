@@ -75,6 +75,7 @@ Ela é uma ferramenta online utilizada para a criação do design de interfaces.
 
 Para visualizar a prototipação dessa aplicação e navegar entre as telas acesse o [link](https://www.figma.com/proto/tb0Enfa1oo68woFIiP5zD1/Prot%C3%B3tipo-de-Tela?node-id=25%3A7&scaling=min-zoom&page-id=0%3A1).
 
+[Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. (EM EDIÇÃO...)
 
 ##
 
