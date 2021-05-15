@@ -30,8 +30,7 @@ public class EquipamentoService  {
 	}
 
 	public void Deletar(Long id) {
-		// TODO Auto-generated method stub
-		
+		repository.deleteById(id);		
 	}
 
 	public Equipamento Alterar(Equipamento equipamento) {
@@ -40,8 +39,8 @@ public class EquipamentoService  {
 	}
 
 	public List<Equipamento> buscarEquipamentoToList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Equipamento> lista  = repository.findAll();
+		return lista;
 	}
 	
 }

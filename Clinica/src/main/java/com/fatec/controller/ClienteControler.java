@@ -22,15 +22,19 @@ import com.fatec.services.ClienteService;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 
-@CrossOrigin()
 @RestController
+@CrossOrigin()
 @RequestMapping("/cliente")
+
 public class ClienteControler {
+	
 	@Autowired(required= true)
 	public ClienteService service;
 	
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Cliente> cadastrar( @RequestBody Cliente cliente, Atendimento atendimento) {
+	public ResponseEntity<Cliente> cadastrar(
+			@RequestBody Cliente cliente,
+			Atendimento atendimento) {
         service.InsertCliente(atendimento, cliente);
         return ResponseEntity.ok(cliente);
     }

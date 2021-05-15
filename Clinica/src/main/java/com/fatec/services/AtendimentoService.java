@@ -34,8 +34,7 @@ public class AtendimentoService  {
 	}
 
 	public void Deletar(Long id) {
-		// TODO Auto-generated method stub
-		
+		repository.deleteById(id);		
 	}
 
 	public Atendimento Alterar(Atendimento atendimento) {
@@ -44,8 +43,8 @@ public class AtendimentoService  {
 	}
 
 	public List<Atendimento> buscarAtendimentoToList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Atendimento> lista  = repository.findAll();
+		return lista;
 	}
 	
 }

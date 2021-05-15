@@ -22,15 +22,16 @@ import com.fatec.services.AtendimentoService;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 
-@CrossOrigin()
-@RestController
+@CrossOrigin ()
+@RestController()
 @RequestMapping("/servicos_prestados")
 public class AtendimentoControler {
 	@Autowired(required= true)
 	public AtendimentoService service;
 	
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Atendimento> cadastrar( @RequestBody Atendimento atendimento, Cliente cliente,Cliente servicosOferecido) {
+	public ResponseEntity<Atendimento> cadastrar( @RequestBody Atendimento atendimento,
+			Cliente cliente, Cliente servicosOferecido) {
         service.InsertAtendimento(atendimento, cliente , servicosOferecido);
         return ResponseEntity.ok(atendimento);
     }
@@ -42,7 +43,7 @@ public class AtendimentoControler {
 	
 	@PutMapping(value = "/editar/{id}")
     public ResponseEntity<Atendimento> alterar(final @PathVariable("id") Long id,
-                                                    @RequestBody Atendimento cliente) throws Exception {
+    		@RequestBody Atendimento cliente) throws Exception {
         Atendimento clienteRef = service.Alterar(cliente);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId_servicos_prestados()).toUri();
         return  ResponseEntity.ok().location(uri).build();

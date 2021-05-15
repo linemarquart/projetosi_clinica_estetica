@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fatec.model.Atendimento;
 import com.fatec.model.Profissionais;
 import com.fatec.repository.ProfissionaisRepository;
 
@@ -32,8 +31,7 @@ public class ProfissionaisService  {
 	}
 
 	public void Deletar(Long id) {
-		// TODO Auto-generated method stub
-		
+		repository.deleteById(id);		
 	}
 
 	public Profissionais Alterar(Profissionais profissionais) {
@@ -42,8 +40,8 @@ public class ProfissionaisService  {
 	}
 
 	public List<Profissionais> buscarProfissionaisToList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Profissionais> lista  = repository.findAll();
+		return lista;
 	}
 	
 }

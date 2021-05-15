@@ -32,8 +32,7 @@ public class ClienteService  {
 	}
 
 	public void Deletar(Long id) {
-		// TODO Auto-generated method stub
-		
+		repository.deleteById(id);		
 	}
 
 	public Cliente Alterar(Cliente cliente) {
@@ -42,8 +41,8 @@ public class ClienteService  {
 	}
 
 	public List<Cliente> buscarClienteToList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Cliente> lista  = repository.findAll();
+		return lista;
 	}
 	
 }
