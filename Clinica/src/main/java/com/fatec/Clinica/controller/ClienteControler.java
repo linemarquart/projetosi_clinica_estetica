@@ -1,4 +1,4 @@
-package com.fatec.controller;
+package com.fatec.Clinica.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -16,24 +16,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.fatec.model.Atendimento;
-import com.fatec.model.Cliente;
-import com.fatec.services.AtendimentoService;
+import com.fatec.Clinica.model.Atendimento;
+import com.fatec.Clinica.model.Cliente;
+import com.fatec.Clinica.services.ClienteService;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 
-@CrossOrigin ()
-@RestController()
-@RequestMapping("/servicos_prestados")
-public class AtendimentoControler {
+@RestController
+@CrossOrigin()
+@RequestMapping("/cliente")
+
+public class ClienteControler {
+	
 	@Autowired(required= true)
-	public AtendimentoService service;
+	public ClienteService service;
 	
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Atendimento> cadastrar( @RequestBody Atendimento atendimento,
-			Cliente cliente, Cliente servicosOferecido) {
-        service.InsertAtendimento(atendimento, cliente , servicosOferecido);
-        return ResponseEntity.ok(atendimento);
+	public ResponseEntity<Cliente> cadastrar(
+			@RequestBody Cliente cliente,
+			Atendimento atendimento) {
+        service.InsertCliente(atendimento, cliente);
+        return ResponseEntity.ok(cliente);
     }
 	@DeleteMapping("/excluir/{id}")
     public ResponseEntity<Void> apagar( @PathVariable Long id) {
@@ -42,21 +45,21 @@ public class AtendimentoControler {
     }
 	
 	@PutMapping(value = "/editar/{id}")
-    public ResponseEntity<Atendimento> alterar(final @PathVariable("id") Long id,
-    		@RequestBody Atendimento cliente) throws Exception {
-        Atendimento clienteRef = service.Alterar(cliente);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId_servicos_prestados()).toUri();
+    public ResponseEntity<Cliente> alterar(final @PathVariable("id") Long id,
+                                                    @RequestBody Cliente cliente) throws Exception {
+        Cliente clienteRef = service.Alterar(cliente);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId()).toUri();
         return  ResponseEntity.ok().location(uri).build();
     }
 	
-	@GetMapping("/buscarAtendimentoPorId/{id}")
-    public ResponseEntity<Atendimento> buscarAtendimentoPorId(@PathVariable("id") Long id) throws ObjectNotFoundException{
-        Atendimento cliente= service.SearchById(id);
+	@GetMapping("/buscarClientePorId/{id}")
+    public ResponseEntity<Cliente> buscarClientePorId(@PathVariable("id") Long id) throws ObjectNotFoundException{
+        Cliente cliente= service.SearchById(id);
         return ResponseEntity.ok().body(cliente);
     }
-	@GetMapping("/buscarAtendimentoToList")
-    public ResponseEntity<List<Atendimento>> buscarAtendimentoToList(){
-        List<Atendimento> cliente= service.buscarAtendimentoToList();
+	@GetMapping("/buscarClienteToList")
+    public ResponseEntity<List<Cliente>> buscarClienteToList(){
+        List<Cliente> cliente= service.buscarClienteToList();
         return ResponseEntity.ok().body(cliente);
     }
 }

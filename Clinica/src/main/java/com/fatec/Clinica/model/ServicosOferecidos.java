@@ -1,4 +1,4 @@
-package com.fatec.model;
+package com.fatec.Clinica.model;
 
 import java.io.Serializable;
 import java.time.LocalTime;

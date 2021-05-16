@@ -1,4 +1,4 @@
-package com.fatec.controller;
+package com.fatec.Clinica.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.fatec.model.Profissionais;
-import com.fatec.services.ProfissionaisService;
+import com.fatec.Clinica.model.Profissionais;
+import com.fatec.Clinica.services.ProfissionaisService;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 

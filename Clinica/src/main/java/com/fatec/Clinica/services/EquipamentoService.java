@@ -1,4 +1,4 @@
-package com.fatec.services;
+package com.fatec.Clinica.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fatec.model.Equipamento;
-import com.fatec.repository.EquipamentoRepository;
+import com.fatec.Clinica.model.Equipamento;
+import com.fatec.Clinica.repository.EquipamentoRepository;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 
