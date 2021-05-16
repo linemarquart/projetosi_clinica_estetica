@@ -58,7 +58,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 
 ## :hourglass_flowing_sand: **Sprints:**
 
-![sprint imagem](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/sprint%20imagem.png)
+![sprint imagem]
 
 
 ## :red_circle: **Tecnologias utilizadas:**
