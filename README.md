@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/logo%20-%20projeto%20si.png" alt="Sublime's custom image"/>
 </p>
@@ -58,7 +57,9 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 
 ## :hourglass_flowing_sand: **Sprints:**
 
-[sprint imagem] (https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/sprint%20imagem.png)
+<p align="center">
+  <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/sprint%20imagem.png" alt="Sublime's custom image"/>
+</p>
 
 
 ## :red_circle: **Tecnologias utilizadas:**
@@ -75,7 +76,7 @@ Ela é uma ferramenta online utilizada para a criação do design de interfaces.
 
 Para visualizar a prototipação dessa aplicação e navegar entre as telas acesse o [link](https://www.figma.com/proto/tb0Enfa1oo68woFIiP5zD1/Prot%C3%B3tipo-de-Tela?node-id=25%3A7&scaling=min-zoom&page-id=0%3A1).
 
-[Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. (EM EDIÇÃO...)
+[Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. 
 
 ##
 
