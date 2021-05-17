@@ -2,8 +2,16 @@ import { Container, Background, Content } from "./styles";
 import { Link } from "react-router-dom";
 
 import { FiArrowLeft } from "react-icons/fi";
+import { useState } from "react";
+import { api } from "../../../services/api";
 
 export default function Clinica() {
+  const [nomeCliente, setNome] = useState("");
+
+  async function renderSubmit(e){
+    e.preventDefault()
+   await api.post("/cliente/cadastrar",{nomeCliente})
+  }
   return (
     <Container>
       <Background>
@@ -13,10 +21,11 @@ export default function Clinica() {
         </Link>
       </Background>
       <Content>
-        <form>
+        <form onSubmit={renderSubmit}>
           <h1>Cadastro de Clientes</h1>
 
-          <input type="text" name="nome" placeholder="Nome Completo" />
+          <input type="text" name="nomeCliente" placeholder="Nome Completo" value={nomeCliente} onChange={(e) => setNome(e.target.value)}
+/>
           <input type="text" name="cpf" placeholder="CPF" />
           <input
             type="text"

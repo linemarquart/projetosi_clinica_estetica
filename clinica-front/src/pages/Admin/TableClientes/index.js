@@ -3,6 +3,28 @@ import { Wrapper, Container } from "./styles";
 import Sidebar from "../../../components/Sidebar";
 
 export default function TableClientes() {
+
+  /**
+   * remover(e, id) {
+    e.preventDefault();
+    fetch(`http://localhost:3101/log/${id}`)
+      .then(obj => obj.json())
+      .then(
+        (json) => {
+          if (json.erro) {
+            this.setState({
+              erro: false,
+              mensagem: json.erro
+            })
+          }
+          else {
+            this.componentDidMount()
+          }
+        }
+      )
+  }
+   */
+  
   return (
     <Wrapper>
       <Sidebar />

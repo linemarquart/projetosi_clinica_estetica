@@ -1,11 +1,43 @@
-import { Container, Background, Content } from "./styles";
+import { Container, Background, Content,Col,Row } from "./styles";
 import { Link } from "react-router-dom";
 
 import { FiArrowLeft } from "react-icons/fi";
 
 export default function CadConsulta() {
+  const [lista, setLista] = useState("");
+
+  async function renderSubmit(e){
+    e.preventDefault()
+   await api.post("/cliente/cadastrar",{nomeCliente})
+  }
+
+ function componentDidMount() {
+    fetch("http://localhost:8080/cliente/buscarClienteToList")
+      .then(obj => obj.json())
+      .then(
+        (json) => {
+          if (json.erro) {
+              Console.log(json.erro)
+          }
+          else {
+                setLista (json.result)
+          }
+        }
+      )
+  }
+componentDidMount()
+
   return (
     <Container>
+       <div>
+              {
+                lista.map((item) =>
+                  <Col key={} >
+                    <Row>{item.nomeCliente}</Row>
+                  </Col>
+                )
+              }
+            </div>
       <Content>
         <form>
           <h1>Cadastro de Consulta</h1>
