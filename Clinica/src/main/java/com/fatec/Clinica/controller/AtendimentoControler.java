@@ -24,7 +24,7 @@ import javassist.tools.rmi.ObjectNotFoundException;
 
 @CrossOrigin ()
 @RestController()
-@RequestMapping("/servicos_prestados")
+@RequestMapping("/atendimento")
 public class AtendimentoControler {
 	@Autowired(required= true)
 	public AtendimentoService service;
@@ -45,7 +45,7 @@ public class AtendimentoControler {
     public ResponseEntity<Atendimento> alterar(final @PathVariable("id") Long id,
     		@RequestBody Atendimento cliente) throws Exception {
         Atendimento clienteRef = service.Alterar(cliente);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId_servicos_prestados()).toUri();
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId_atendimento()).toUri();
         return  ResponseEntity.ok().location(uri).build();
     }
 	

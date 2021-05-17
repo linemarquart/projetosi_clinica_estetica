@@ -33,9 +33,8 @@ public class ClienteControler {
 	
 	@PostMapping("/cadastrar")
 	public ResponseEntity<Cliente> cadastrar(
-			@RequestBody Cliente cliente,
-			Atendimento atendimento) {
-        service.InsertCliente(atendimento, cliente);
+			@RequestBody Cliente cliente) {
+        service.InsertCliente(cliente);
         return ResponseEntity.ok(cliente);
     }
 	@DeleteMapping("/excluir/{id}")
@@ -48,7 +47,7 @@ public class ClienteControler {
     public ResponseEntity<Cliente> alterar(final @PathVariable("id") Long id,
                                                     @RequestBody Cliente cliente) throws Exception {
         Cliente clienteRef = service.Alterar(cliente);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId()).toUri();
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(clienteRef.getId_cliente()).toUri();
         return  ResponseEntity.ok().location(uri).build();
     }
 	

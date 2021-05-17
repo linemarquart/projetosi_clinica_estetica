@@ -23,20 +23,19 @@ public class Cliente implements Serializable{
 
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    private Long id_cliente;
 	
-	@Column(name="nome_cliente")
+	@Column(name="nome")
 	private String nomeCliente;
-	
-	@OneToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="id_cliente", nullable = false)
-    private Cliente cliente;
 	
 	@Column(name="cpf")
 	private String CPF;
 	
+	@Column(name="endereco")
+	private String endereco;
+	
 	@OneToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="id_servicos_p", nullable = false)
+    @JoinColumn(name="id_atendimento", nullable = true)
     private Atendimento atendimento;
 	
 }

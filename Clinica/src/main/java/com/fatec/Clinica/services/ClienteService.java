@@ -25,8 +25,7 @@ public class ClienteService  {
 		return cliente.orElseThrow(() -> new ObjectNotFoundException("Cliente não encontrado!"));
 	}
 	
-	public Cliente InsertCliente (Atendimento atendimento,Cliente cliente){
-		cliente.setAtendimento(atendimento);
+	public Cliente InsertCliente (Cliente cliente){
 		repository.save(cliente);
 		return cliente;
 	}

@@ -21,13 +21,13 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter @AllArgsConstructor
-@Table(name="servicos_prestados")
+@Table(name="atendimento")
 public class Atendimento implements Serializable{
 	private static final long serialVersionUID = -3014077332877053727L;
 
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id_servicos_prestados;
+    private Long id_atendimento;
 	
 	@Column(name="nome_cliente")
 	private String nomeCliente;
@@ -38,7 +38,7 @@ public class Atendimento implements Serializable{
 	
 	@OneToOne(fetch= FetchType.LAZY)
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name="id_servicos_oferecido", nullable = false)
+    @JoinColumn(name="id_servicos_oferecidos", nullable = false)
     private Cliente servicosOferecido;
 	
 	@Column(name="data")
