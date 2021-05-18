@@ -1,13 +1,13 @@
 import Routes from "./routes/routes";
-import GlobalStyle from './styles/global';
+import GlobalStyle from "./styles/global";
 
-import PageProvider from './hooks/useTitle';
+import "antd/dist/antd.css";
 
 export default function App() {
   return (
-    <PageProvider>
+    <>
       <Routes />
       <GlobalStyle />
-    </PageProvider>
+    </>
   );
 }
