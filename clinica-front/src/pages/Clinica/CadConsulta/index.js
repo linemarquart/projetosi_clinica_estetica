@@ -1,7 +1,7 @@
 import { Container, Background, Content } from "./styles";
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 import { Select } from "antd";
 
@@ -11,9 +11,18 @@ import { ToastContainer, toast } from "react-toastify";
 import { api } from "../../../services/api";
 
 export default function CadConsulta() {
-  const [lista, setLista] = useState("");
-
+  const [lista, setLista] = useState([]);
   const [nomeCliente, setNomeCliente] = useState("");
+
+  useEffect(() => {
+    async function loadConsulta() {
+      const response = await api.get('/cliente/buscarClienteToList');
+      const { data } = response;
+      setLista(data);
+    }
+
+    loadConsulta();
+  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -21,19 +30,6 @@ export default function CadConsulta() {
 
     toast.success("Consulta cadastrada com sucesso!");
   }
-
-  function componentDidMount() {
-    fetch("http://localhost:8080/cliente/buscarClienteToList")
-      .then((obj) => obj.json())
-      .then((json) => {
-        if (json.erro) {
-          console.log(json.erro);
-        } else {
-          setLista(json.result);
-        }
-      });
-  }
-  componentDidMount();
 
   const { Option } = Select;
 
@@ -44,7 +40,7 @@ export default function CadConsulta() {
   }
 
   function onSearch(val) {
-    console.log("search:", val);
+    
   }
 
   return (
@@ -60,8 +56,12 @@ export default function CadConsulta() {
             onChange={onChange}
             onSearch={onSearch}
           >
-            <Option value="victoria">Victoria</Option>
-            <Option value="gabriel">Gabriel</Option>
+            {
+              lista.map((item) =>
+                <Option value={item.id_cliente}>{item.nomeCliente}</Option>
+              )
+            }
+
           </Select>
           <input type="text" name="data" placeholder="Data da Consulta" />
 

@@ -7,12 +7,12 @@ import { useState } from "react";
 import { api } from "../../../services/api";
 
 export default function CadProfissional() {
-  const [equipamento, setEquipamento] = useState("");
+  const [nomeEquipamento, setEquipamento] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await api.post("/cliente/cadastrar", { equipamento });
+    await api.post("/equipamento/cadastrar", { nomeEquipamento });
 
     setEquipamento("");
     toast.success("Equipamento cadastrado com sucesso!");
@@ -29,9 +29,9 @@ export default function CadProfissional() {
 
           <input
             type="text"
-            name="equipamento"
+            name="nomeEquipamento"
             placeholder="Nome do Equipamento"
-            value={equipamento}
+            value={nomeEquipamento}
             onChange={(e) => setEquipamento(e.target.value)}
           />
 

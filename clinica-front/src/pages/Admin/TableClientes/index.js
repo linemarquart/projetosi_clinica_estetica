@@ -1,32 +1,29 @@
 import { Wrapper, Container } from "./styles";
 
 import Sidebar from "../../../components/Sidebar";
+import { useState, useEffect } from "react";
+import { api } from "../../../services/api";
 
 import { FiTrash } from 'react-icons/fi';
 
 export default function TableClientes() {
+  const [lista, setLista] = useState([]);
 
-  /**
-   * remover(e, id) {
-    e.preventDefault();
-    fetch(`http://localhost:3101/log/${id}`)
-      .then(obj => obj.json())
-      .then(
-        (json) => {
-          if (json.erro) {
-            this.setState({
-              erro: false,
-              mensagem: json.erro
-            })
-          }
-          else {
-            this.componentDidMount()
-          }
-        }
-      )
+  useEffect(() => {
+    async function loadConsulta() {
+      const response = await api.get('/cliente/buscarClienteToList');
+      const { data } = response;
+      setLista(data);
+    }
+
+    loadConsulta();
+  }, []);
+
+  async function deleteUser(id) {
+    await api.delete(`/cliente/excluir/${id}`)
+    window.location.reload();
   }
-   */
-  
+
   return (
     <Wrapper>
       <Sidebar />
@@ -41,26 +38,16 @@ export default function TableClientes() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Chave anonamizada</td>
-              <td>Chave anonamizada</td>
-              <td>1</td>
-              <td className="delete"><FiTrash/></td>
-            </tr>
-
-            <tr>
-              <td>Chave anonamizada</td>
-              <td>Chave anonamizada</td>
-              <td>3</td>
-              <td><FiTrash/></td>
-            </tr>
-
-            <tr>
-              <td>Chave anonamizada</td>
-              <td>Chave anonamizada</td>
-              <td>2</td>
-              <td><FiTrash/></td>
-            </tr>
+            {
+              lista.map((item) =>
+                <tr>
+                  <td>{item.nomeCliente}</td>
+                  <td>{item.cpf}</td>
+                  <td>{item.atendimento}</td>
+                  <td className="delete"><FiTrash onClick={() => deleteUser(item.id_cliente)} /></td>
+                </tr>
+              )
+            }
           </tbody>
         </table>
       </Container>

@@ -13,7 +13,7 @@ export default function CadProfissional() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await api.post("/cliente/cadastrar", { especialidade });
+    await api.post("/profissionais/cadastrar", { especialidade });
 
     setEspecialidade('');
     toast.success("Profissional cadastrado com sucesso!");
