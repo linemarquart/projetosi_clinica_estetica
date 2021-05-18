@@ -1,47 +1,68 @@
-import { Container, Background, Content,Col,Row } from "./styles";
+import { Container, Background, Content } from "./styles";
 import { Link } from "react-router-dom";
 
-import { FiArrowLeft } from "react-icons/fi";
+import { useState } from "react";
+
+import { Select } from "antd";
+
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+
+import { api } from "../../../services/api";
 
 export default function CadConsulta() {
   const [lista, setLista] = useState("");
 
-  async function renderSubmit(e){
-    e.preventDefault()
-   await api.post("/cliente/cadastrar",{nomeCliente})
+  const [nomeCliente, setNomeCliente] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    await api.post("/cliente/cadastrar", { nomeCliente });
+
+    toast.success("Consulta cadastrada com sucesso!");
   }
 
- function componentDidMount() {
+  function componentDidMount() {
     fetch("http://localhost:8080/cliente/buscarClienteToList")
-      .then(obj => obj.json())
-      .then(
-        (json) => {
-          if (json.erro) {
-              Console.log(json.erro)
-          }
-          else {
-                setLista (json.result)
-          }
+      .then((obj) => obj.json())
+      .then((json) => {
+        if (json.erro) {
+          console.log(json.erro);
+        } else {
+          setLista(json.result);
         }
-      )
+      });
   }
-componentDidMount()
+  componentDidMount();
+
+  const { Option } = Select;
+
+  function onChange(value) {
+    console.log(`selected ${value}`);
+
+    setNomeCliente(value);
+  }
+
+  function onSearch(val) {
+    console.log("search:", val);
+  }
 
   return (
     <Container>
-       <div>
-              {
-                lista.map((item) =>
-                  <Col key={} >
-                    <Row>{item.nomeCliente}</Row>
-                  </Col>
-                )
-              }
-            </div>
+      <ToastContainer />
       <Content>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h1>Cadastro de Consulta</h1>
-          <input type="text" name="cliente" placeholder="Cliente" />
+          <Select
+            showSearch
+            placeholder="Selecionar cliente"
+            optionFilterProp="children"
+            onChange={onChange}
+            onSearch={onSearch}
+          >
+            <Option value="victoria">Victoria</Option>
+            <Option value="gabriel">Gabriel</Option>
+          </Select>
           <input type="text" name="data" placeholder="Data da Consulta" />
 
           <p>Serviço</p>
@@ -59,7 +80,6 @@ componentDidMount()
       </Content>
       <Background>
         <Link to="clinica">
-          <FiArrowLeft size="20px" />
           <h3>Voltar</h3>
         </Link>
       </Background>

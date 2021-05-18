@@ -15,7 +15,7 @@ export default function DashboardAdmin() {
         <div>
           <p>Profissionais</p>
           <Link to="/profissional">
-            <h1>Cadastrar Profissionais</h1>
+            <h2>Cadastrar Profissionais</h2>
             <FiArrowRight size="30px" />
           </Link>
         </div>
@@ -26,7 +26,7 @@ export default function DashboardAdmin() {
         <div>
           <p>Equipamentos</p>
           <Link to="/equipamentos">
-            <h1>Cadastrar Equipamentos</h1>
+            <h2>Cadastrar Equipamentos</h2>
             <FiArrowRight size="30px" />
           </Link>
         </div>

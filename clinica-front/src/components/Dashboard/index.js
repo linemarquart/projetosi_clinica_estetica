@@ -18,7 +18,7 @@ function Dashboard() {
             <FiUser size="25px" />
           </div>
           <p>Total</p>
-          <h2>450 Clientes</h2>
+          <h2>100 Clientes</h2>
         </ContainerBox>
       </TotalClientes>
 

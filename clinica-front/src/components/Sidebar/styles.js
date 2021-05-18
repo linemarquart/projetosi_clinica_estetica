@@ -30,8 +30,9 @@ export const Footer = styled.div`
   }
 `;
 
-export const Logo = styled.h3`
+export const Logo = styled.h1`
   color: var(--color-white);
+  font-weight: bold;
 `;
 
 export const Menu = styled.div`
