@@ -23,6 +23,8 @@ import lombok.Setter;
 public class Cliente implements Serializable{
 	private static final long serialVersionUID = -4602669281285861285L;
 
+	public Cliente() {} //constructor padrão
+	
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_cliente;

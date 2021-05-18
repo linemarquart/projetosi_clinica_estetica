@@ -20,6 +20,8 @@ import lombok.Setter;
 public class Equipamento implements Serializable{
 	private static final long serialVersionUID = 5702870824830132281L;
 
+	public Equipamento() {} //constructor padrão
+	
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_equipamento;

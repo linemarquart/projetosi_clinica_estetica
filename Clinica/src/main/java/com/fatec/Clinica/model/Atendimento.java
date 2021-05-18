@@ -24,6 +24,8 @@ import lombok.Setter;
 @Table(name="atendimento")
 public class Atendimento implements Serializable{
 	private static final long serialVersionUID = -3014077332877053727L;
+	
+	public Atendimento() {} //constructor padrão
 
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)

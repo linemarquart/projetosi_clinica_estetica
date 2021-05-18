@@ -21,6 +21,9 @@ import lombok.Setter;
 @Table(name="servicos_oferecidos")
 public class ServicosOferecidos implements Serializable{
 	private static final long serialVersionUID = 8344992230990166895L;
+	
+	public ServicosOferecidos() {} //constructor padrão
+	
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_servicos_oferecidos;

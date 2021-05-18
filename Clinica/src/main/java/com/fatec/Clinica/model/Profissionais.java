@@ -20,6 +20,8 @@ import lombok.Setter;
 public class Profissionais implements Serializable{
 	private static final long serialVersionUID = 3928690242781860136L;
 
+	public Profissionais() {} //constructor padrão
+	
 	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_profissional;
