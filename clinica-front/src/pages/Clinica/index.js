@@ -24,8 +24,7 @@ export default function Clinica() {
       <Container>
         <Top>
           <Logo>
-            {" "}
-            <h1>Clínica.</h1>
+            Clínica.
           </Logo>
 
           <Menu>

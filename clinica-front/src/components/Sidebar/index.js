@@ -20,9 +20,8 @@ import {
         <Container>
           <Top>
             <Logo>
-              {" "}
-              <h1>Admin.</h1>
-            </Logo>
+             Admin
+             </Logo>
   
             <Menu>
               <NavLink>

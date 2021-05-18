@@ -2,6 +2,8 @@ import { Wrapper, Container } from "./styles";
 
 import Sidebar from "../../../components/Sidebar";
 
+import { FiTrash } from 'react-icons/fi';
+
 export default function TableClientes() {
 
   /**
@@ -43,18 +45,21 @@ export default function TableClientes() {
               <td>Chave anonamizada</td>
               <td>Chave anonamizada</td>
               <td>1</td>
+              <td className="delete"><FiTrash/></td>
             </tr>
 
             <tr>
               <td>Chave anonamizada</td>
               <td>Chave anonamizada</td>
               <td>3</td>
+              <td><FiTrash/></td>
             </tr>
 
             <tr>
               <td>Chave anonamizada</td>
               <td>Chave anonamizada</td>
               <td>2</td>
+              <td><FiTrash/></td>
             </tr>
           </tbody>
         </table>

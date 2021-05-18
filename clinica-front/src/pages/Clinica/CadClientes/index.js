@@ -1,43 +1,66 @@
 import { Container, Background, Content } from "./styles";
 import { Link } from "react-router-dom";
 
-import { FiArrowLeft } from "react-icons/fi";
 import { useState } from "react";
 import { api } from "../../../services/api";
 
-export default function Clinica() {
-  const [nomeCliente, setNome] = useState("");
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
-  async function renderSubmit(e){
-    e.preventDefault()
-   await api.post("/cliente/cadastrar",{nomeCliente})
+import InputMask from 'react-input-mask';
+
+export default function Clinica() {
+  const [nomeCliente, setNomeCliente] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [endereco, setEndereco] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    await api.post("/cliente/cadastrar", { nomeCliente, cpf, endereco });
+
+    setNomeCliente('');
+    setCpf('');
+    setEndereco('');
+
+    toast.success("Cliente cadastrado com sucesso!");
   }
   return (
     <Container>
       <Background>
         <Link to="clinica">
-          <FiArrowLeft size="20px" />
-          <h3>Voltar</h3>{" "}
+          <h3>Voltar</h3>
         </Link>
       </Background>
+
+      <ToastContainer />
       <Content>
-        <form onSubmit={renderSubmit}>
+        <form onSubmit={handleSubmit}>
           <h1>Cadastro de Clientes</h1>
 
-          <input type="text" name="nomeCliente" placeholder="Nome Completo" value={nomeCliente} onChange={(e) => setNome(e.target.value)}
-/>
-          <input type="text" name="cpf" placeholder="CPF" />
           <input
             type="text"
-            name="data_de_nasc"
-            placeholder="Data de Nascimento"
+            name="nomeCliente"
+            placeholder="Nome Completo"
+            value={nomeCliente}
+            onChange={(e) => setNomeCliente(e.target.value)}
+          />
+          <InputMask
+            mask="999.999.999-99"
+            type="text"
+            name="cpf"
+            placeholder="CPF"
+            value={cpf}
+            onChange={(e) => setCpf(e.target.value)}
           />
 
           <p>Endereço</p>
-          <input type="text" name="rua" placeholder="Rua/Avenida" />
-          <input type="text" name="bairro" placeholder="Bairro" />
-          <input type="text" name="estado" placeholder="Estado" />
-          <input type="text" name="cidade" placeholder="Cidade" />
+          <input
+            type="text"
+            name="rua"
+            placeholder="Digite o endereço"
+            value={endereco}
+            onChange={(e) => setEndereco(e.target.value)}
+          />
 
           <button type="submit">Cadastrar Cliente</button>
           <Link to="/consulta">Cadastrar Consulta</Link>

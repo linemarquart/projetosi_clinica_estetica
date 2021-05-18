@@ -38,4 +38,8 @@ export const Container = styled.div`
       color: blueviolet;
     }
   }
+
+  .delete {
+    cursor: pointer;
+  }
 `;
