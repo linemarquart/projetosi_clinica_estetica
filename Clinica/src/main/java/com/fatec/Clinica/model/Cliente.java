@@ -38,9 +38,7 @@ public class Cliente implements Serializable{
 	@Column(name="endereco")
 	private String endereco;
 	
-	@OneToOne(fetch= FetchType.LAZY)
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name="id_atendimento", nullable = true)
-    private Atendimento atendimento;
+	@Column(name="id_atendimento")
+    private int atendimento;
 	
 }

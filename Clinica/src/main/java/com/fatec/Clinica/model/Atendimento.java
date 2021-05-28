@@ -31,19 +31,22 @@ public class Atendimento implements Serializable{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_atendimento;
 	
-	@Column(name="nome_cliente")
-	private String nomeCliente;
+	@Column(name="id_equipamento")
+	private int equipamento;
 	
-	@OneToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="id_cliente", nullable = false)
-    private Cliente cliente;
+	@Column(name="valor")
+	private float valor;
 	
-	@OneToOne(fetch= FetchType.LAZY)
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name="id_servicos_oferecidos", nullable = false)
-    private Cliente servicosOferecido;
+	@Column(name="id_cliente")
+    private int cliente;
+	
+	@Column(name="id_servicos_oferecidos")
+    private int servicosOferecido;
+	
+	@Column(name="id_profissional")
+    private int profissional;
 	
 	@Column(name="data")
-	private LocalDate data;
+	private String data;
 	
 }

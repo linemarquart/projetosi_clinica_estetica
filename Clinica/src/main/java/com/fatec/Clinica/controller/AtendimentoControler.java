@@ -30,9 +30,8 @@ public class AtendimentoControler {
 	public AtendimentoService service;
 	
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Atendimento> cadastrar( @RequestBody Atendimento atendimento,
-			Cliente cliente, Cliente servicosOferecido) {
-        service.InsertAtendimento(atendimento, cliente , servicosOferecido);
+	public ResponseEntity<Atendimento> cadastrar( @RequestBody Atendimento atendimento) {
+        service.InsertAtendimento(atendimento);
         return ResponseEntity.ok(atendimento);
     }
 	@DeleteMapping("/excluir/{id}")

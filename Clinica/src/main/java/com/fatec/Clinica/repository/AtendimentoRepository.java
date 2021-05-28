@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.support.JpaRepositoryImplementati
 
 import com.fatec.Clinica.model.Atendimento;
 
-public interface ServicosPrestRepository extends JpaRepositoryImplementation<Atendimento, Long> {
+public interface AtendimentoRepository extends JpaRepositoryImplementation<Atendimento, Long> {
 
 }

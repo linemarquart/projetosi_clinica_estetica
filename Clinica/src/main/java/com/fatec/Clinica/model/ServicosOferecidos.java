@@ -12,10 +12,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+@JsonIgnoreProperties ({"hibernateLazyInitializer", "handler"})
 @Entity
 @Getter @Setter @AllArgsConstructor
 @Table(name="servicos_oferecidos")
@@ -34,15 +37,13 @@ public class ServicosOferecidos implements Serializable{
 	@Column(name="valor")
 	private float valor;
 	
-	@OneToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="id_profissional", nullable = false)
-    private Profissionais Profissional;
+	@Column(name="id_profissional")
+    private int profissional;
 	
 	@Column(name="tempo")
 	private LocalTime tempo;
 	
-	@OneToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="equipamento", nullable = false)
-    private Equipamento Equipamento;
+	@Column(name="equipamento")
+    private int Equipamento;
 	
 }

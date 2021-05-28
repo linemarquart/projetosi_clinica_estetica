@@ -1,5 +1,6 @@
 package com.fatec.Clinica.services;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,17 +9,14 @@ import org.springframework.stereotype.Service;
 
 import com.fatec.Clinica.model.Atendimento;
 import com.fatec.Clinica.model.Cliente;
-import com.fatec.Clinica.repository.ServicosPrestRepository;
+import com.fatec.Clinica.repository.AtendimentoRepository;
 
 import javassist.tools.rmi.ObjectNotFoundException;
-
-
-//AtendimentoService antes estava vazia
 
 @Service
 public class AtendimentoService  {
 	@Autowired
-	private ServicosPrestRepository repository;
+	private AtendimentoRepository repository;
 	//private FichaService fichaService;
 	
 	public Atendimento SearchById (Long id) throws ObjectNotFoundException{
@@ -26,9 +24,7 @@ public class AtendimentoService  {
 		return atendimento.orElseThrow(() -> new ObjectNotFoundException("Atendimento não encontrado!"));
 	}
 	
-	public Atendimento InsertAtendimento (Atendimento atendimento,Cliente cliente , Cliente servicosOferecido){
-		atendimento.setCliente(cliente);
-		atendimento.setServicosOferecido(servicosOferecido);
+	public Atendimento InsertAtendimento (Atendimento atendimento){
 		repository.save(atendimento);
 		return atendimento;
 	}
