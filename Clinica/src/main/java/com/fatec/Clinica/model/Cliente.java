@@ -16,29 +16,33 @@ import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.var;
 
 @Entity
-@Getter @Setter @AllArgsConstructor
-@Table(name="cliente")
-public class Cliente implements Serializable{
+@Getter
+@Setter
+@AllArgsConstructor
+@Table(name = "cliente")
+public class Cliente implements Serializable {
 	private static final long serialVersionUID = -4602669281285861285L;
 
-	public Cliente() {} //constructor padrão
-	
+	public Cliente() {
+	} // constructor padrão
+
 	@Id()
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id_cliente;
-	
-	@Column(name="nome")
-	private String nomeCliente;
-	
-	@Column(name="cpf")
-	private String CPF;
-	
-	@Column(name="endereco")
-	private String endereco;
-	
-	@Column(name="id_atendimento")
-    private int atendimento;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	public Long id_cliente;
+
+	@Column(name = "nome")
+	public String nomeCliente;
+
+	@Column(name = "cpf")
+	public String cpf;
+
+	@Column(name = "endereco")
+	public String endereco;
+
+	@Column(name = "id_atendimento")
+	public int atendimento;
+
 }

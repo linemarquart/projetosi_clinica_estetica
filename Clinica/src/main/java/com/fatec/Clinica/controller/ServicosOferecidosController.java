@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.fatec.Clinica.model.ServicosOferecidos;
 import com.fatec.Clinica.services.ServicosOferecidosService;
 
@@ -23,12 +24,14 @@ import javassist.tools.rmi.ObjectNotFoundException;
 @RestController
 @RequestMapping("/servicos_oferecidos")
 public class ServicosOferecidosController {
+	
 	@Autowired(required= true)
 	public ServicosOferecidosService service;
 	
 	@PostMapping("/cadastrar")
 	public ResponseEntity<ServicosOferecidos> cadastrar(@RequestBody ServicosOferecidos servicosOferecidos) {
-        service.InsertServicosOferecidos(servicosOferecidos);
+        System.out.println(servicosOferecidos);
+		service.InsertServicosOferecidos(servicosOferecidos);
         return ResponseEntity.ok(servicosOferecidos);
     }
 	@DeleteMapping("/excluir/{id}")

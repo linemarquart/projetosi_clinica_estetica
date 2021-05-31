@@ -1,6 +1,5 @@
 package com.fatec.Clinica.services;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fatec.Clinica.model.Atendimento;
-import com.fatec.Clinica.model.Cliente;
 import com.fatec.Clinica.repository.AtendimentoRepository;
 
 import javassist.tools.rmi.ObjectNotFoundException;
