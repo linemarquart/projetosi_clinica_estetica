@@ -43,13 +43,13 @@ public class ClienteControler {
 		return ResponseEntity.ok().build();
 	}
 
-	@PutMapping(value = "/editar/{id}")
-	public ResponseEntity<Cliente> alterar(final @PathVariable("id") Long id, @RequestBody Cliente cliente)
+	@GetMapping(value = "/editar/{id}")
+	public ResponseEntity<Cliente> alterar(final @PathVariable("id") Long id)
 			throws Exception {
-		Cliente clienteRef = service.Alterar(cliente);
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-				.buildAndExpand(clienteRef.getId_cliente()).toUri();
-		return ResponseEntity.ok().location(uri).build();
+		Cliente cliente = service.SearchById(id);
+		cliente.setNomeCliente("roberto");
+		cliente = service.Alterar(cliente);
+		return ResponseEntity.ok().body(cliente);
 	}
 
 	@GetMapping("/buscarClientePorId/{id}")

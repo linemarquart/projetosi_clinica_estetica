@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fatec.Clinica.model.Atendimento;
+import com.fatec.Clinica.model.Cliente;
 import com.fatec.Clinica.repository.AtendimentoRepository;
+import com.fatec.Clinica.repository.ClienteRepository;
 
 import javassist.tools.rmi.ObjectNotFoundException;
 
@@ -15,7 +17,8 @@ import javassist.tools.rmi.ObjectNotFoundException;
 public class AtendimentoService  {
 	@Autowired
 	private AtendimentoRepository repository;
-	//private FichaService fichaService;
+	@Autowired
+	private ClienteRepository clienteRepository;
 	
 	public Atendimento SearchById (Long id) throws ObjectNotFoundException{
 		Optional<Atendimento> atendimento = repository.findById(id);
@@ -39,6 +42,16 @@ public class AtendimentoService  {
 	public List<Atendimento> buscarAtendimentoToList() {
 		List<Atendimento> lista  = repository.findAll();
 		return lista;
+	}
+	
+	public void AddAtendimento(Cliente cliente, String atendimento) {
+		if(cliente.getAtendimento().equals("")) {
+			cliente.setAtendimento(atendimento);
+		}
+		else {
+			cliente.setAtendimento(cliente.getAtendimento() + "," +atendimento);
+		}
+		clienteRepository.save(cliente);
 	}
 	
 }

@@ -34,8 +34,8 @@ public class ClienteService {
 	}
 
 	public Cliente Alterar(Cliente cliente) {
-		// TODO Auto-generated method stub
-		return null;
+		repository.save(cliente);
+		return cliente;
 	}
 
 	public List<Cliente> buscarClienteToList() {
@@ -69,4 +69,6 @@ public class ClienteService {
 		}
 		return cliente;
 	}
+	
+	
 }
