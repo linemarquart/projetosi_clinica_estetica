@@ -36,7 +36,7 @@ Implementando uma modelagem de banco de acordo com os requisitos de anonimizaç�
 ## :pencil2: **Desenvolvimento:**
 
 Será desenvolvido uma aplicação CRUD com acesso ao Bancos de dados voltado à solucionar problemas de anonimização dos dados sensíveis de clientes da clínica de estética.  
-Solicitando a aceitação do termos de uso, onde será informado a utilização dos dados pessoais da pessoa pela empresa, iremos diferenciar quem aceitar ou não aceitar, criptografando ou não seus dados em nosso banco de acordo com sua escolha  
+Solicitando a aceitação do termos de uso, onde será informado a utilização dos dados pessoais da pessoa pela empresa, iremos diferenciar quem aceitar ou não aceitar, criptografando ou não seus dados em nosso banco de acordo com sua escolha.  
 
 Aplicando o artigo 9º da lei [LGPD](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) , iremos trabalhar com:
 - Ofuscar dados pessoais, para que dados de vendas sejam fornecidos de forma estatística, assim não tornando o portador do dado identificável.
