@@ -10,6 +10,7 @@ git clone https://github.com/linemarquart/projetosi_clinica_estetica.git
 ## Criar um banco de dados postgress para a conecção
 
 Com o SprintToolSuite aberto abrir o arquivo projetosi_clinica_estetica\Clinica\src\main\resources\application.properties
+
 Alterar a ultima palavra da linha 10 para o nome do banco criado e colocar na linha 12 a senha do banco 
 
 Feito isso trocar na linha 8 de '_none_' para '_create_' 
