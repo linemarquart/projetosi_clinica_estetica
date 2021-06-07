@@ -69,6 +69,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 - Vertabelo
 - Eclipse/SpringTools  
 
+
 ## 💻 Prototipação
 A prototipação é essencial para a visualização do projeto antes de começar o desenvolvimento.
 Para realizar a criação do protótipo, foi utilizado a plataforma [Figma](https://www.figma.com/).
@@ -78,9 +79,11 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 
 [Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. 
 
-##:man_technologist: Como testar o banco de dados:
+
+## :man_technologist: **Como testar o banco de dados:**
 
 [Passo a passo para testar o banco de dados](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Clinica/Readme.md)
+
 
 ##
 
