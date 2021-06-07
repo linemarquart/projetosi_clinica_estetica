@@ -78,6 +78,10 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 
 [Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. 
 
+##:man_technologist: Como testar o banco de dados:
+
+[Passo a passo para testar o banco de dados](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Clinica/Readme.md)
+
 ##
 
 Esse projeto está relacionado à matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal. 
