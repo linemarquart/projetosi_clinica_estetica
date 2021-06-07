@@ -80,9 +80,9 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 [Veja mais](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Prototipa%C3%A7%C3%A3o/Prototipa%C3%A7%C3%A3o_Readme.md) detalhes sobre as telas prototipadas. 
 
 
-## :man_technologist: **Como testar o banco de dados:**
+## :man_technologist: **Como executar o banco de dados:**
 
-[Passo a passo para testar o banco de dados](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Clinica/Readme.md)
+:white_check_mark: [Passo a passo para executar o banco de dados no seu computador](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Clinica/Readme.md)
 
 
 ##
