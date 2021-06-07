@@ -14,7 +14,7 @@
 - :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine) [@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
 - :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete) [@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
 - :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss) [@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
-- :man: Toni William do Prado [@GitHub](https://github.com/toniprado)
+- :man: Toni William do Prado [@GitHub](https://github.com/toniprado) [@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
 - :woman: Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar)
 
 
