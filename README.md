@@ -48,7 +48,7 @@ Exemplo:
 |  ID  |  Nome            |   Telefone           |  Agendamento  |  Procedimento  | Valor  |
 | ---- | ---------------- | -------------------- | ------------- | -------------  | ------- |
 |  1   |  Maria Clara     |   (12) 981375021     |    02/04/21   |        B       | 200,00  |  
-|  2   | **CRIPTOGRAFADO**|   **CRIPTOGRAFADO**  |  05/04/21     |        A       | 170,00  |  
+|  2   | **CRIPTOGRAFADO**|   **CRIPTOGRAFADO**  |    05/04/21   |        A       | 170,00  |  
 
 
 Portanto mesmo tendo parte dos dados criptografados, é possível gerar relatórios dos dados não pessoais, podendo tratá-los e torná-los como parâmetros para o crescimento da empresa.
@@ -58,7 +58,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 ## :hourglass_flowing_sand: **Sprints:**
 
 <p align="center">
-  <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/SPRINT%20ATUALIZADA.png" alt="Sublime's custom image"/>
+  <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/SPRINT%204.png" alt="Sublime's custom image"/>
 </p>
 
 
