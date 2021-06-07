@@ -8,12 +8,12 @@
 ## :large_blue_circle: **Integrantes da Equipe:**
 
 
-- :woman: Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart)
-- :man: Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes)
-- :man: Igor Sene Idalgo [@GitHub](https://github.com/IgorS12)
-- :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine)
-- :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete)
-- :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss)
+- :woman: Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart) [@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
+- :man: Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes) [@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
+- :man: Igor Sene Idalgo [@GitHub](https://github.com/IgorS12) [@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
+- :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine) [@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
+- :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete) [@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
+- :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss) [@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
 - :man: Toni William do Prado [@GitHub](https://github.com/toniprado)
 - :woman: Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar)
 
