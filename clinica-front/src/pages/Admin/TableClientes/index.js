@@ -9,6 +9,11 @@ import { FiTrash } from 'react-icons/fi';
 export default function TableClientes() {
   const [lista, setLista] = useState([]);
 
+  var str = '123.123.123-12'
+  var newStr = str.split('');
+  newStr.splice(0, 8);
+  newStr = newStr.join('');
+
   useEffect(() => {
     async function loadConsulta() {
       const response = await api.get('/cliente/buscarClienteToList');
