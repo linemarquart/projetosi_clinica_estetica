@@ -8,14 +8,14 @@
 ## :large_blue_circle: **Integrantes da Equipe:**
 
 
-- :woman: Aline Oliveira dos Santos :white_circle:[@GitHub](https://github.com/linemarquart) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
-- :man: Gustavo Lopes de Paula :white_circle:[@GitHub](https://github.com/GusttavoLopes) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
-- :man: Igor Sene Idalgo :white_circle:[@GitHub](https://github.com/IgorS12) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
-- :woman: Larissa Janine Dias :white_circle:[@GitHub](https://github.com/larijanine) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
-- :man: Marcos Paulo Simoes Donizete :white_circle:[@GitHub](https://github.com/MarcospsDonizete) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
-- :man: Matheus Ribeiro dos Santos :white_circle:[@GitHub](https://github.com/matheusribss) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
-- :man: Toni William do Prado :white_circle:[@GitHub](https://github.com/toniprado) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
-- :woman: Victoria Ferreira Ribeiro :white_circle:[@GitHub](https://github.com/victoriandujar) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/victoria-ribeiro-09b372208/) 
+- :woman: Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
+- :man: Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
+- :man: Igor Sene Idalgo [@GitHub](https://github.com/IgorS12) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
+- :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
+- :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
+- :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
+- :man: Toni William do Prado [@GitHub](https://github.com/toniprado) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
+- :woman: Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/victoria-ribeiro-09b372208/) 
 
 
 ## :computer: **LGPD:**
