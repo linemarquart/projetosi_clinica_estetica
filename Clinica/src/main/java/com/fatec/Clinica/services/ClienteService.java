@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.fatec.Clinica.cryptography.EncriptaDecriptaOTP;
 import com.fatec.Clinica.model.Cliente;
+import com.fatec.Clinica.model.Relatorios;
 import com.fatec.Clinica.repository.ClienteRepository;
 
 import javassist.tools.rmi.ObjectNotFoundException;
@@ -16,7 +17,9 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository repository;
 	private EncriptaDecriptaOTP encoder = new EncriptaDecriptaOTP();
-	// private FichaService fichaService;
+
+	@Autowired
+	private RelatoriosService relatoriosService;
 
 	public Cliente SearchById(Long id) throws ObjectNotFoundException {
 		Optional<Cliente> cliente = repository.findById(id);
@@ -24,12 +27,32 @@ public class ClienteService {
 	}
 
 	public Cliente InsertCliente(Cliente cliente) {
+		Relatorios relatorio = new Relatorios();
+		
+		String cpf = cliente.getCpf().split("-")[0].substring (cliente.getCpf().split("-")[0].length() - 3);
+		String dados = cliente.getNomeCliente().split(" ")[0] + cpf;
+		
+		relatorio.setDadosCliente(dados);
+		relatorio.setData(relatoriosService.getDate());
+		relatorio.setLog("Insert");
+		relatoriosService.InsertRelatorio(relatorio);
 		cliente = CriptografaCliente(cliente);
 		repository.save(cliente);
 		return cliente;
 	}
 
-	public void Deletar(Long id) {
+	public void Deletar(Long id) throws ObjectNotFoundException {
+		Relatorios relatorio = new Relatorios();
+		Cliente cliente = SearchById(id);
+		cliente = DescriptografaCliente(cliente);
+		
+		String cpf = cliente.getCpf().split("-")[0].substring (cliente.getCpf().split("-")[0].length() - 3);
+		String dados = cliente.getNomeCliente().split(" ")[0] + cpf;
+		
+		relatorio.setDadosCliente(dados);
+		relatorio.setData(relatoriosService.getDate());
+		relatorio.setLog("Delete");
+		relatoriosService.InsertRelatorio(relatorio);
 		repository.deleteById(id);
 	}
 
@@ -69,6 +92,5 @@ public class ClienteService {
 		}
 		return cliente;
 	}
-	
-	
+
 }

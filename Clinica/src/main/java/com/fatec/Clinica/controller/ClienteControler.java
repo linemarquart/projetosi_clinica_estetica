@@ -1,6 +1,5 @@
 package com.fatec.Clinica.controller;
 
-import java.net.URI;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,15 +9,13 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import com.fatec.Clinica.cryptography.EncriptaDecriptaOTP;
 import com.fatec.Clinica.model.Cliente;
 import com.fatec.Clinica.services.ClienteService;
+
+import javassist.tools.rmi.ObjectNotFoundException;
 
 
 @RestController
@@ -26,8 +23,6 @@ import com.fatec.Clinica.services.ClienteService;
 @RequestMapping("/cliente")
 
 public class ClienteControler {
-	private EncriptaDecriptaOTP encoder = new EncriptaDecriptaOTP();
-
 	@Autowired(required = true)
 	public ClienteService service;
 
@@ -38,7 +33,7 @@ public class ClienteControler {
 	}
 
 	@DeleteMapping("/excluir/{id}")
-	public ResponseEntity<Void> apagar(@PathVariable Long id) {
+	public ResponseEntity<Void> apagar(@PathVariable Long id) throws ObjectNotFoundException {
 		service.Deletar(id);
 		return ResponseEntity.ok().build();
 	}

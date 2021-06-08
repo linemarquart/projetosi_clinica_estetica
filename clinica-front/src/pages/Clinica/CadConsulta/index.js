@@ -9,6 +9,8 @@ import { api } from "../../../services/api";
 
 export default function CadConsulta() {
   const [listaCliente, setListaCliente] = useState([]);
+  const [listaProfissionais, setListaProfissionais] = useState([]);
+  const [listaEquipamentos, setListaEquipamentos] = useState([]);
   const [listaServicos, setListaServicos] = useState([]);
   const [cliente, setIdCliente] = useState("");
   const [valor, setValor] = useState("");
@@ -28,6 +30,12 @@ export default function CadConsulta() {
 
       const listService = await api.get('/servicos_oferecidos/buscarServicosToList');
       setListaServicos(listService.data);
+
+      const listEquips = await api.get('/equipamento/buscarEquipamentoToList');
+      setListaEquipamentos(listEquips.data);
+
+      const listaProf = await api.get('/profissionais/buscarProfissionaisToList');
+      setListaProfissionais(listaProf.data);
     }
 
     loadConsulta();
@@ -46,6 +54,7 @@ export default function CadConsulta() {
   function onChangeClient(value) {
     setIdCliente(value)
   }
+  
   function onChangeService(id, value) {
     setIdServicos(value.name)
     setValorServicos(value.value)
@@ -57,14 +66,20 @@ export default function CadConsulta() {
       setValor(value.value)
     }
   }
+
   function onChangeTime(value) {
 
     setValor(value * ValorServicos)
   }
 
-  function onSearch(val) {
-
+  function onChangeEquips(value) {
+    setIdEquipamento(value)
   }
+
+  function onChangeProfis(value) {
+    setProfissional(value )
+  }
+
 
   return (
     <Container>
@@ -125,9 +140,31 @@ export default function CadConsulta() {
 
           <input type="text" name="valor" placeholder="Valor" value={valor} onChange={(e) => setValor(e.target.value)} />
 
-          <input type="text" name="profissional" placeholder="Profissional" onChange={(e)=> setProfissional(e.target.value)}/>
+          <Select
+            showSearch
+            placeholder="Selecionar equipamento"
+            optionFilterProp="children"
+            onChange={onChangeEquips}
+          >
+            {
+              listaEquipamentos.map((item) =>
+                <Option value={item.id_equipamento}>{item.nomeEquipamento}</Option>
+              )
+            }
+          </Select>
 
-          <input type="text" name="equipamento" placeholder="Equipamento" onChange={(e)=> setIdEquipamento(e.target.value)}/>
+          <Select
+            showSearch
+            placeholder="Selecionar profissional"
+            optionFilterProp="children"
+            onChange={onChangeProfis}
+          >
+            {
+              listaProfissionais.map((item) =>
+                <Option value={item.id_profissional}>{item.especialidade}</Option>
+              )
+            }
+          </Select>
 
           <button type="submit">Marcar Consulta</button>
           <Link to="/cliente">Cadastrar Cliente</Link>

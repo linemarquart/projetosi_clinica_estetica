@@ -27,16 +27,24 @@ export default function Logs() {
                 <h1>Logs</h1>
 
                 <ContainerLogs>
-                    <div className="header-logs">
-                        <h3>Log</h3>
-                        <h3>01</h3>
-                    </div>
-                    <div className="info-logs">
-                        <h3>ID Relatório: <b>09</b></h3>
-                        <h3>Logs: <b>Insert</b></h3>
-                        <h3>Data: <b>07/06/2021 - 20:40:12</b></h3>
-                        <h3>Dados Cliente: <b>Seila mano</b></h3>
-                    </div>
+                    {
+                        logs.map((item,i) => 
+                        <>
+                            <div className="header-logs">
+                                <h3>Log</h3>
+                                <h3>{i+1}</h3>
+                            </div>
+                            <div className="info-logs">
+                                <h3>ID Relatório: <b>{item.id_relatorio}</b></h3>
+                                <h3>Logs: <b>{item.log}</b></h3>
+                                <h3>Data: <b>{item.data}</b></h3>
+                                <h3>Dados Cliente: <b>{item.dadosCliente}</b></h3>
+                            </div>
+                        </>
+                        )
+                    }
+
+
                 </ContainerLogs>
             </Container>
         </Wrapper>

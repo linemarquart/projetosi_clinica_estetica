@@ -1,5 +1,6 @@
 package com.fatec.Clinica.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,6 +20,8 @@ public class AtendimentoService  {
 	private AtendimentoRepository repository;
 	@Autowired
 	private ClienteRepository clienteRepository;
+	@Autowired
+	ClienteService clienteService;
 	
 	public Atendimento SearchById (Long id) throws ObjectNotFoundException{
 		Optional<Atendimento> atendimento = repository.findById(id);
@@ -44,8 +47,18 @@ public class AtendimentoService  {
 		return lista;
 	}
 	
+	public List<Atendimento> buscarAtendimentoToListClient(long id) throws ObjectNotFoundException {
+		Cliente cliente = clienteService.SearchById(id);
+		String[] listaIds = cliente.getAtendimento().split(",");
+		List<Atendimento> lista  = new ArrayList<Atendimento>();
+		for(String s : listaIds ) {
+			lista.add(SearchById(Long.parseLong(s)));
+		}
+		return lista;
+	}
+	
 	public void AddAtendimento(Cliente cliente, String atendimento) {
-		if(cliente.getAtendimento().equals("")) {
+		if(cliente.getAtendimento()==null || cliente.getAtendimento().isBlank()) {
 			cliente.setAtendimento(atendimento);
 		}
 		else {

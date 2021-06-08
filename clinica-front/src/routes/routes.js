@@ -29,7 +29,7 @@ export default function Routes() {
         <Route path="/equipamentos" exact component={CadEquipamentos} />
 
         <Route path="/relatorio" exact component={TableClientes} />
-        <Route path="/atendimento" exact component={Atendimento} />
+        <Route path="/atendimento/:id" exact component={Atendimento} />
         <Route path="/logs" exact component={Logs} />
 
         <Route path="/dashAdmin" exact component={DashAdmin} />

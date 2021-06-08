@@ -46,7 +46,7 @@ export default function TableClientes() {
             {
               lista.map((item) =>
                 <tr>
-                  <td>{item.nomeCliente}</td>
+                  <td><a href={`/atendimento/${item.id_cliente}`}>{item.nomeCliente}</a></td>
                   <td>{item.cpf}</td>
                   <td>{item.atendimento}</td>
                   <td className="delete"><FiTrash onClick={() => deleteUser(item.id_cliente)} /></td>
