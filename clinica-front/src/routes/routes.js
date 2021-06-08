@@ -10,6 +10,8 @@ import CadProfissional from '../pages/Admin/CadProfissional';
 import CadEquipamentos from '../pages/Admin/CadEquipamentos';
 
 import TableClientes from '../pages/Admin/TableClientes';
+import Atendimento from '../pages/Admin/Atendimento';
+import Logs from '../pages/Admin/Logs';
 
 import DashAdmin from "../pages/Admin/DashAdmin";
 
@@ -27,6 +29,8 @@ export default function Routes() {
         <Route path="/equipamentos" exact component={CadEquipamentos} />
 
         <Route path="/relatorio" exact component={TableClientes} />
+        <Route path="/atendimento" exact component={Atendimento} />
+        <Route path="/logs" exact component={Logs} />
 
         <Route path="/dashAdmin" exact component={DashAdmin} />
       </Switch>

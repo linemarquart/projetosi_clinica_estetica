@@ -16,8 +16,8 @@ export const Container = styled.div`
 
   padding: 2rem 2rem 2rem 2rem;
 
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 `;
 
 export const Top = styled.div``;

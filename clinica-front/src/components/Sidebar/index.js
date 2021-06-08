@@ -38,6 +38,11 @@ import {
                 <FiFileText size="18px" />
                 <Link to="/relatorio">Relatórios</Link>
               </NavLink>
+
+              <NavLink>
+                <FiFileText size="18px" />
+                <Link to="/logs">Logs</Link>
+              </NavLink>
             </Menu>
           </Top>
   
