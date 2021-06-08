@@ -9,10 +9,7 @@ import { FiTrash } from 'react-icons/fi';
 export default function TableClientes() {
   const [lista, setLista] = useState([]);
 
-  var str = '123.123.123-12'
-  var newStr = str.split('');
-  newStr.splice(0, 8);
-  newStr = newStr.join('');
+  
 
   useEffect(() => {
     async function loadConsulta() {
@@ -27,6 +24,12 @@ export default function TableClientes() {
   async function deleteUser(id) {
     await api.delete(`/cliente/excluir/${id}`)
     window.location.reload();
+  }
+  function formatCpf(str){
+    var newStr = str.split('-')[0];
+    newStr = newStr.substring(newStr.length - 3)
+    newStr = `***.***.${newStr}-**`
+    return newStr
   }
 
   return (
@@ -47,7 +50,7 @@ export default function TableClientes() {
               lista.map((item) =>
                 <tr>
                   <td><a href={`/atendimento/${item.id_cliente}`}>{item.nomeCliente}</a></td>
-                  <td>{item.cpf}</td>
+                  <td>{formatCpf(item.cpf)}</td>
                   <td>{item.atendimento}</td>
                   <td className="delete"><FiTrash onClick={() => deleteUser(item.id_cliente)} /></td>
                 </tr>
