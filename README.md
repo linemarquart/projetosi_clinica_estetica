@@ -8,14 +8,14 @@
 ## :large_blue_circle: **Integrantes da Equipe:**
 
 
-- :woman: Aline Oliveira dos Santos :small_orange_diamond:[@GitHub](https://github.com/linemarquart) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
-- :man: Gustavo Lopes de Paula :small_orange_diamond:[@GitHub](https://github.com/GusttavoLopes) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
-- :man: Igor Sene Idalgo :small_orange_diamond:[@GitHub](https://github.com/IgorS12) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
-- :woman: Larissa Janine Dias :small_orange_diamond:[@GitHub](https://github.com/larijanine) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
-- :man: Marcos Paulo Simoes Donizete :small_orange_diamond:[@GitHub](https://github.com/MarcospsDonizete) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
-- :man: Matheus Ribeiro dos Santos :small_orange_diamond:[@GitHub](https://github.com/matheusribss) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
-- :man: Toni William do Prado :small_orange_diamond:[@GitHub](https://github.com/toniprado) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
-- :woman: Victoria Ferreira Ribeiro :small_orange_diamond:[@GitHub](https://github.com/victoriandujar) :small_blue_diamond:[@Linkedin](https://www.linkedin.com/in/victoria-ribeiro-09b372208/) 
+- :woman: Aline Oliveira dos Santos :white_circle:[@GitHub](https://github.com/linemarquart) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
+- :man: Gustavo Lopes de Paula :white_circle:[@GitHub](https://github.com/GusttavoLopes) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
+- :man: Igor Sene Idalgo :white_circle:[@GitHub](https://github.com/IgorS12) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
+- :woman: Larissa Janine Dias :white_circle:[@GitHub](https://github.com/larijanine) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
+- :man: Marcos Paulo Simoes Donizete :white_circle:[@GitHub](https://github.com/MarcospsDonizete) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
+- :man: Matheus Ribeiro dos Santos :white_circle:[@GitHub](https://github.com/matheusribss) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
+- :man: Toni William do Prado :white_circle:[@GitHub](https://github.com/toniprado) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
+- :woman: Victoria Ferreira Ribeiro :white_circle:[@GitHub](https://github.com/victoriandujar) :large_blue_circle:[@Linkedin](https://www.linkedin.com/in/victoria-ribeiro-09b372208/) 
 
 
 ## :computer: **LGPD:**
