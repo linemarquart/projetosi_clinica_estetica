@@ -99,7 +99,7 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 
 
 
-[![Watch the video](https://youtu.be/rtwCHQQRH60)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/rtwCHQQRH60)
 
 
 
