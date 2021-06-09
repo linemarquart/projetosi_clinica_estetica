@@ -91,6 +91,11 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 :white_check_mark: [Passo a passo para execução com Create React App no seu computador](https://github.com/linemarquart/projetosi_clinica_estetica/tree/main/clinica-front)
 
 
+## :movie_camera: **Vídeo demonstrativo:**
+
+:white_check_mark: [@Vídeo no Youtube](https://youtu.be/rtwCHQQRH60)
+
+
 ##
 
 Esse projeto está relacionado à matéria de Segurança da Informação, lecionada pelo professor Eduardo Sakaue, da Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal. 
