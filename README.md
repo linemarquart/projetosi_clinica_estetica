@@ -93,9 +93,11 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 
 ## :movie_camera: **Vídeo demonstrativo:**
 
+https://user-images.githubusercontent.com/51121525/121279093-5d491c00-c8aa-11eb-91bc-fe19ef9bcb44.mp4
+
+
 :white_check_mark: [Assista o vídeo pelo Youtube](https://youtu.be/rtwCHQQRH60)
 
-:white_check_mark: [Baixe o vídeo em seu dispositivo](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/video%20demonstrativo.mp4)
 
 
 ##
