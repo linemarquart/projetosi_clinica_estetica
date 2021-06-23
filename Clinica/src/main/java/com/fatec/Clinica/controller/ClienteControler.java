@@ -59,4 +59,5 @@ public class ClienteControler {
 		List<Cliente> cliente = service.buscarClienteToList();
 		return ResponseEntity.ok().body(cliente);
 	}
+	
 }

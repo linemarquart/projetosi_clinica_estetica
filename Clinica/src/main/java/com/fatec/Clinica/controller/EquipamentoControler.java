@@ -41,7 +41,6 @@ public class EquipamentoControler {
         return ResponseEntity.ok().build();
     }
 	
-	
 	@PutMapping(value = "/editar/{id}")
     public ResponseEntity<Equipamento> alterar(final @PathVariable("id") Long id,
                                                     @RequestBody Equipamento equipamento) throws Exception {
