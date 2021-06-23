@@ -58,7 +58,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 ## :hourglass_flowing_sand: **Sprints:**
 
 <p align="center">
-  <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/SPRINT%204.png" alt="Sublime's custom image"/>
+  <img src="https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Imagens/5%20SPRINTS%20ATUALIZADA%20-%20SI.png" alt="Sublime's custom image"/>
 </p>
 
 
