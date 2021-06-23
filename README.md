@@ -8,14 +8,14 @@
 ## :large_blue_circle: **Integrantes da Equipe:**
 
 
-- :woman: Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart) [@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
-- :man: Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes) [@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
-- :man: Igor Sene Idalgo [@GitHub](https://github.com/IgorS12) [@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
-- :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine) [@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
-- :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete) [@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
-- :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss) [@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
-- :man: Toni William do Prado [@GitHub](https://github.com/toniprado) [@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
-- :woman: Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar)
+- :woman: Aline Oliveira dos Santos [@GitHub](https://github.com/linemarquart) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/aline-oliveira-dos-santos-a36598a8/)
+- :man: Gustavo Lopes de Paula [@GitHub](https://github.com/GusttavoLopes) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/gustavo-lopes-3a255117b/)
+- :man: Igor Sene Idalgo [@GitHub](https://github.com/IgorS12) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/igor-sene-9a4051172/)
+- :woman: Larissa Janine Dias [@GitHub](https://github.com/larijanine) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/larissa-dias-a37935151/)
+- :man: Marcos Paulo Simoes Donizete [@GitHub](https://github.com/MarcospsDonizete) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/marcos-paulo-sim%C3%B5es-donizete-7b70aa132/)
+- :man: Matheus Ribeiro dos Santos [@GitHub](https://github.com/matheusribss) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/matheus-ribeiro-dos-santos-a9b531b3/)
+- :man: Toni William do Prado [@GitHub](https://github.com/toniprado) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/toni-william-a9a425148/)
+- :woman: Victoria Ferreira Ribeiro [@GitHub](https://github.com/victoriandujar) :white_circle::white_circle: [@Linkedin](https://www.linkedin.com/in/victoria-ribeiro-09b372208/) 
 
 
 ## :computer: **LGPD:**
@@ -68,6 +68,7 @@ Além de garantir os processos dentro da lei, evitando multas dolorosas, a empre
 - BrModelo
 - Vertabelo
 - Eclipse/SpringTools  
+- React
 
 
 ## 💻 Prototipação
@@ -83,6 +84,20 @@ Para visualizar a prototipação dessa aplicação e navegar entre as telas aces
 ## :man_technologist: **Como executar o banco de dados:**
 
 :white_check_mark: [Passo a passo para executar o banco de dados no seu computador](https://github.com/linemarquart/projetosi_clinica_estetica/blob/main/Clinica/Readme.md)
+
+
+## :art: **Primeiros passos com Create React App:**
+
+:white_check_mark: [Passo a passo para execução com Create React App no seu computador](https://github.com/linemarquart/projetosi_clinica_estetica/tree/main/clinica-front)
+
+
+## :movie_camera: **Vídeo demonstrativo:**
+
+https://user-images.githubusercontent.com/51121525/121279093-5d491c00-c8aa-11eb-91bc-fe19ef9bcb44.mp4
+
+
+
+:white_check_mark: [Assista o vídeo pelo Youtube](https://youtu.be/rtwCHQQRH60)
 
 
 ##
